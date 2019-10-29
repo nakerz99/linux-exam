@@ -1,0 +1,9 @@
+# REQUIRED
+<VirtualHost *:80 *:443>
+ ServerName www.exam.com
+ DocumentRoot  /home/test
+ SSLEngine on
+ SSLCertificateFile /etc/apache2/SSL/test/exam.crt
+ SSLCertificateKeyFile /etc/apache2/SSL/test/exam.key
+ SSLCertificateChainFile /etc/apache2/SSL/test/DigiCertCA.crt
+</VirtualHost>
