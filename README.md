@@ -17,10 +17,10 @@ there's alot of command how we can check swap usage but the common and easy to u
     4.2 SSL certs is under /etc/apache2/SSL/test/
     4.3 Steps on how to test if vhost is working
         4.3.1 saying that the apache conf is at /etc/apache2/sites-available/ & /etc/apache2/sites-enable/
-            -we can use nginx -t or nginx -T to see what inside of conf file 
+            -we can use apachectl -S to see the status and configuration in /etc/apache2/sites-available/ & /etc/apache2/sites-enable/
 ## 5. Create a vhost config that will handle http and https traffic under apache -  pls check the nginx folder
     5.1 Lets say that the directory is /home/test/ as home directory
     5.2 SSL certs is under /etc/nginx/SSL/test/
     5.3 Steps on how to test if vhost is working
         5.3.1 saying that the apache conf is at /etc/nginx/sites-available/ & /etc/nginx/sites-enable/
-            -we can use nginx -t or nginx -T to see what inside of conf file
+            -we can use nginx -t to test and check conf file or nginx -T to see what inside of conf file
