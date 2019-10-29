@@ -12,13 +12,21 @@ there's alot of command how we can check swap usage but the common and easy to u
     b. swapon -s
 
 
-## 4. Create a vhost config that will handle http and https traffic under apache - pls check the apache folder
+## 4. Create a vhost config that will handle http and https traffic under apache 
+    -   pls check the apache folder
+    -   to enble the config file run the command:
+        $ sudo ln -s etc/apache2/sites-available/exam.confi  /etc/apache2/sites-enable/exam.confi
+    -   then restart the apache
     4.1 Lets say that the directory is /home/test/ as home directory
     4.2 SSL certs is under /etc/apache2/SSL/test/
     4.3 Steps on how to test if vhost is working
         4.3.1 saying that the apache conf is at /etc/apache2/sites-available/ & /etc/apache2/sites-enable/
             -we can use apachectl -S to see the status and configuration in /etc/apache2/sites-available/ & /etc/apache2/sites-enable/
-## 5. Create a vhost config that will handle http and https traffic under apache -  pls check the nginx folder
+## 5. Create a vhost config that will handle http and https traffic under apache 
+    -   pls check the nginx folder
+    -   to enble the config file run the command:
+        $ sudo ln -s etc/nginx/sites-available/exam.confi  /etc/nginx/sites-enable/exam.confi
+    -   then restart the apache/nginx and php-fpm
     5.1 Lets say that the directory is /home/test/ as home directory
     5.2 SSL certs is under /etc/nginx/SSL/test/
     5.3 Steps on how to test if vhost is working
